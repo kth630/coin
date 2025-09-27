@@ -6,9 +6,7 @@
 
 ## 1) SMA (Simple Moving Average, 단순 이동평균선)
 **정의**  
-```math
-SMA_t = (1/n) * Σ_{i=0}^{n-1} P_{t-i}
-```
+
 - 일정 기간 n 동안의 종가 평균  
 
 **해석 방법**  
@@ -24,9 +22,7 @@ SMA_t = (1/n) * Σ_{i=0}^{n-1} P_{t-i}
 
 ## 2) EMA (Exponential Moving Average, 지수 이동평균선)
 **정의**  
-```math
-EMA_t = α * P_t + (1-α) * EMA_{t-1},   α = 2/(n+1)
-```
+
 - 최근 데이터에 더 큰 가중치 부여  
 
 **해석 방법**  
@@ -41,9 +37,7 @@ EMA_t = α * P_t + (1-α) * EMA_{t-1},   α = 2/(n+1)
 
 ## 3) RSI (Relative Strength Index, 상대강도지수)
 **정의**  
-```math
-RSI = 100 - 100 / (1 + RS),   RS = 평균상승폭 / 평균하락폭
-```
+
 - 0~100 사이의 값으로 과매수·과매도 상태 판단  
 
 **해석 방법**  
@@ -58,10 +52,7 @@ RSI = 100 - 100 / (1 + RS),   RS = 평균상승폭 / 평균하락폭
 
 ## 4) MACD (Moving Average Convergence Divergence)
 **정의**  
-```math
-MACD = EMA_{12} - EMA_{26}
-Signal = EMA_9(MACD)
-```
+
 - 장단기 EMA 간 차이를 이용한 모멘텀 지표  
 
 **해석 방법**  
@@ -78,10 +69,7 @@ Signal = EMA_9(MACD)
 
 ## 5) Bollinger Bands (볼린저 밴드)
 **정의**  
-```math
-Upper = SMA_n + k * σ
-Lower = SMA_n - k * σ
-```
+
 - 이동평균선을 중심으로 ±표준편차 범위를 밴드로 표시  
 
 **해석 방법**  
@@ -97,10 +85,7 @@ Lower = SMA_n - k * σ
 
 ## 6) ATR (Average True Range, 평균 진폭)
 **정의**  
-```math
-TR = max(High-Low, |High-PrevClose|, |Low-PrevClose|)
-ATR = TR의 n기간 이동평균
-```
+
 - 가격 변동성 크기를 측정하는 지표  
 
 **해석 방법**  
@@ -115,9 +100,7 @@ ATR = TR의 n기간 이동평균
 
 ## 7) SuperTrend (슈퍼트렌드)
 **정의**  
-```math
-기본 밴드 = (High + Low)/2 ± (Multiplier * ATR)
-```
+
 - ATR 기반 추세 추종형 지표  
 
 **해석 방법**  
@@ -131,7 +114,7 @@ ATR = TR의 n기간 이동평균
 
 ---
 
-## 📌 요약
+## 요약
 - **SMA/EMA**: 가격 추세 확인  
 - **RSI**: 과매수·과매도 판단  
 - **MACD**: 추세 강도 및 전환 신호  
